@@ -1,0 +1,268 @@
+@import url(fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    max-width: 1110px;
+    width: 100%;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.wrapper {
+    background: #F1F1F1;
+    position: relative;
+}
+
+.nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding: 30px 0 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: all 0.6s;
+}
+
+.nav:hover {
+    width: 234px;
+}
+
+.nav__list {
+    padding-left: 15px;
+}
+
+.nav__item:not(:last-child) {
+    margin-bottom: 55px;
+}
+
+.nav__link {
+    font-family: "RR";
+    font-size: 18px;
+    line-height: 21px;
+    color: #2A86B1;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    font-size: 35px;
+    margin-right: 30px;
+}
+
+.header {
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.header__content {
+    background: url(../img/Фон.png  );
+    background-color: #FFFFFF;
+    height: 500px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 62px;
+    position: relative;
+    z-index: 2;
+}
+
+.header__content-title {
+    font-family: 'RB';
+    font-size: 50px;
+    line-height: 59px;
+    color: #464748;
+    width: 332px;
+    position: absolute;
+    z-index: 2;
+    top: 111px;
+}
+
+.box {
+    position: absolute;
+    width: 100px;
+    height: 52px;
+    background: #3FA5D5;
+    z-index: 1;
+    top: 144px;
+}
+
+.header__content-desc {
+    width: 314px;
+    font-family: 'RR';
+    font-size: 16px;
+    line-height: 19px;
+    color: #696868;
+    position: absolute;
+    top: 255px;
+}
+
+.header__content-btn {
+    background: #3FA5D5;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    width: 211px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'RR';
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 111px;
+}
+
+.main__card {
+    width: 255px;
+    height: 338px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 32px 18px 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__card-title {
+    font-family: 'RB';
+    font-size: 20px;
+    line-height: 24px;
+    color: #2A86B1;
+    text-align: center;
+}
+
+.btn {
+    position: static;
+    width: 219px;
+}
+
+.main__cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+.main__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.main__info-title {
+    font-family: 'RB';
+    font-size: 20px;
+    line-height: 24px;
+    color: #686868;
+    padding: 0 56px 0 20px;
+}
+
+.main__block-left {
+    width: 825px;
+}
+
+.main__block-desc {
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 15px;
+    color: #545454;
+    font-family: 'RR';
+    font-size: 16px;
+    line-height: 19px;
+    width: 795px;
+}
+
+.main__block-desc:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.main__blocks {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 44px;
+}
+
+.block__right {
+    padding: 17px 15px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.block__card-title {
+    color: #323232;
+    font-family: 'RR';
+    font-size: 17px;
+    line-height: 94.5%;
+    margin-bottom: 5px;
+}
+
+.block__card-desc {
+    font-family: 'RL';
+    color: #000000;
+    font-size: 14px;
+    line-height: 13px;
+}
+
+.block__right:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.footer {
+    height: 140px;
+    background: #3FA5D5;
+    display: flex;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.footer-title{
+    font-family: 'RB';
+    font-size: 50px;
+    line-height: 59px;
+    color: #FFFFFF;
+}
+
+.footer__info-tel{
+    font-family: 'RB';
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.footer__info-mail{
+    font-family: 'RR';
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
